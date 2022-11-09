@@ -1,0 +1,44 @@
+.score-content {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 3%;
+    margin-bottom: 2%;
+    flex-grow: 0;
+}
+
+.score-content button {
+    background-color: rgba(255, 255, 255, 0.613);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: none;
+    width: 60px;
+    height: 60px;
+    margin: 2%;
+    font-size: 2em;
+    border-radius: 50%;
+}
+
+
+:disabled {
+    fill: gray;
+}
+
+button:enabled:hover {
+    fill: rgb(243, 240, 245);
+    background-color: rgba(86, 57, 107, 0.613);
+}
+
+
+.score-content label {
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+}
+

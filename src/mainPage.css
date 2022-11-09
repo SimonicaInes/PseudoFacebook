@@ -1,0 +1,90 @@
+:root {
+    --pageFont : Arial, Helvetica, sans-serif;
+    --textColor: rgb(51, 51, 51);
+}
+
+.main-page {
+    display: flex;
+    flex-grow: 1;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--pageFont)
+}
+
+.login-card {
+    display: flex;
+    flex-direction: column;
+    
+    background: linear-gradient(180deg, rgba(175, 0, 177, 0.333) 0%, rgba(245, 245, 245, 0.2475) 100%);
+    box-shadow: 11px 9px 26px 3px rgba(0, 0, 0, 0.49);
+    backdrop-filter: blur(7.5px);
+    width: 28%;
+    height: 40%;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 57px;
+}
+
+.top-login-card, .bottom-login-card {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    align-items: center;
+    padding: 5% 0;
+}
+
+.top-login-card {
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+
+.bottom-login-card { 
+    justify-content: center;
+    align-items: center;
+}
+
+.login-card label {
+    font-size: 1.5em;
+    color: var(--textColor);
+    /* flex-grow: 2; */
+}
+
+.login-card input {
+    background-color: rgba(255, 255, 255, 0.606);
+    color: var(--textColor);
+    border-radius: 100px;
+    border-width: 0;
+    width: 100%;
+    margin-top: 10px;
+    height: 30%;
+    font-family: var(--pageFont);
+    font-size: 20px;
+    padding-left: 10px;
+    text-align: center;
+} 
+
+.login-card button {
+    border-radius: 80px;
+    border-width: 0;
+    font-size: 1.5em;
+    padding: 20px 80px 20px 80px;
+    background-color: rgb(227, 227, 227);
+    color: var(--textColor);
+    font-family: var(--pageFont)
+    
+}
+
+.login-card label, .login-card button, .login-card input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 1000px) {
+    .login-card {
+        width: 70%;
+        height: 90%;
+    }
+}
